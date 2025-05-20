@@ -3,20 +3,95 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/final.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
+  <style type="text/css"></style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ["Inter"],
+          },
+        },
+      },
+    };
+  </script>
   <body>
-    <h1 class="text-3xl font-bold mt-3.5 text-blue-500 underline text-center">
-      Hello world!
-    </h1>
-    <a href="#" class="m-4 bg-blue-400 p-3 inline-block text-white rounded shadow hover:bg-blue-700">Submit</a>
-    <p class="m-3 bg-green-600 underline">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-      sapiente nesciunt recusandae sequi blanditiis corrupti, impedit eius
-      aliquid enim temporibus laboriosam! Animi ut quis, doloremque quas eveniet
-      error necessitatibus odit pariatur odio consequuntur, quaerat, omnis
-      nostrum culpa qui ex laudantium porro tempore nam molestias. Iusto fugiat
-      eum voluptatibus harum cum!
-    </p>
+    <h1 class="text-center text-3xl font-bold mt-5">
+      Belajar
+      <span class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">
+        Tailwind CSS
+      </span>
+      V4
+    </h1>    
+    <!-- Belajar Margin -->
+    <section class="mb-10 bg-amber-400">
+      <p class="m-4">
+        Tailwind CSS adalah framework CSS yang memungkinkan Anda untuk membangun
+        antarmuka pengguna yang responsif dan dapat disesuaikan dengan cepat.
+        Dengan menggunakan kelas-kelas utilitas, Anda dapat menghindari
+        penulisan CSS kustom yang rumit.
+      </p>
+      <p class="m-7 mt-5 font-bold">
+        Tailwind CSS menyediakan berbagai kelas utilitas untuk mengatur tata
+        letak, warna, tipografi, dan banyak lagi. Anda dapat menggabungkan
+        kelas-kelas ini untuk membuat desain yang unik dan menarik.
+      </p>
+      <p class="ml-7 text-2xl">
+        Untuk memulai dengan Tailwind CSS, Anda perlu menginstalnya melalui npm
+        atau menggunakan CDN. Setelah itu, Anda dapat mulai menggunakan
+        kelas-kelas utilitas dalam HTML Anda.
+      </p>
+    </section>
+    <!-- Belajar Padding -->
+    <section class="mb-10 bg-gradient-to-r from-green-600 to-green-200">
+      <p class="p-4">
+        Tailwind CSS juga menyediakan kelas-kelas untuk mengatur padding pada
+        elemen. Anda dapat menggunakan kelas seperti p-4 untuk memberikan
+        padding sebesar 1rem di semua sisi elemen.
+      </p>
+      <p class="p-7 pt-5 font-bold">
+        Anda juga dapat mengatur padding secara spesifik untuk setiap sisi
+        elemen, misalnya pt-4 untuk padding atas, pb-4 untuk padding bawah, pl-4
+        untuk padding kiri, dan pr-4 untuk padding kanan.
+      </p>
+    </section>
+    <!-- Belajar Width -->
+    <section class="mb-10">
+      <p class="w-40">
+        Tailwind CSS memungkinkan Anda untuk mengatur lebar elemen dengan mudah.
+        Anda dapat menggunakan kelas seperti w-1/2 untuk memberikan lebar 50%
+        dari elemen induknya.
+      </p>
+      <p class="w-auto font-bold">
+        Anda juga dapat menggunakan kelas seperti w-full untuk memberikan lebar
+        100% pada elemen, atau w-auto untuk mengatur lebar otomatis sesuai
+        konten.
+      </p>
+    </section>
+    <!-- Belajar Typography -->
+    <section class="mb-10">
+      <p class="text-lg font-inter">
+        Tailwind CSS menyediakan berbagai kelas untuk mengatur tipografi,
+        seperti ukuran teks, warna teks, dan gaya teks. Anda dapat menggunakan
+        kelas seperti text-xl untuk ukuran teks yang lebih besar, atau
+        text-gray-700 untuk mengubah warna teks menjadi abu-abu.
+      </p>
+      <p class="text-sm font-bold italic">
+        Anda juga dapat menggunakan kelas seperti font-bold untuk membuat teks
+        menjadi tebal, atau italic untuk membuat teks menjadi miring.
+      </p>
+      <p class="font-thin text-2xl">
+        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est saepe
+        iste aperiam?"
+      </p>
+    </section>
   </body>
 </html>
